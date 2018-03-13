@@ -1,0 +1,1592 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #224764;
+  border-spacing: 0px;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #224764;
+  border: 1px solid #FFFFFF;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #FFFFFF;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #224764;
+  border-spacing: 0px;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #224764;
+  border-spacing: 0px;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #224764;
+  border-spacing: 0px;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #224764;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.caption
+{
+  background-color: #224764;
+  border-spacing: 0px;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.container
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentfolder
+{
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: decimal;
+}
+.contentprocname
+{
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: decimal;
+}
+.contents
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.contenttitle
+{
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.continued
+{
+  background-color: #224764;
+  border-spacing: 0px;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #285375;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.dataemphasis
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #285375;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.datafixed
+{
+  background-color: #285375;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.document
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+a:link {
+color:#E3BC61
+}
+a:visited {
+color:#FEEDA2
+}
+a:active {
+color:#FEEDA2
+}
+.errorbanner
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontentfixed
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #224764;
+  border: 1pt solid #000000;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontentfixed
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.graph
+{
+  background-color: #224764;
+  border: 1px solid #FFFFFF;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.header
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.indexaction
+{
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: decimal;
+}
+.indextitle
+{
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.list
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.notebanner
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontentfixed
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #000000;
+  border: 1px solid #FFFFFF;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.pageno
+{
+  background-color: #224764;
+  border-spacing: 0px;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: decimal;
+}
+.pagesprocname
+{
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  list-style-type: decimal;
+}
+.pagestitle
+{
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.paragraph
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #387BB1;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter10
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter2
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter3
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter4
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter5
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter6
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter7
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter8
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter9
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #224764;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.table
+{
+  background-color: #000000;
+  border: 2px solid #FFFFFF;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #224764;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.warnbanner
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontentfixed
+{
+  background-color: #224764;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="l systemtitle">The SAS System</td>
+</tr>
+</table><br>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><h1>Result Type: ALBUMIN</h1></td>
+</tr>
+</table>
+<div class="branch">
+<div>
+<div  class="l">
+<img alt="ALBUMIN" src="ALBUMIN1.png" style=" height: 1066px; width: 1193px;" border="0" class="l">
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><h1>Result Type: ALT</h1></td>
+</tr>
+</table>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX1"></a>
+<div>
+<div  class="l">
+<img alt="ALT" src="ALT1.png" style=" height: 1066px; width: 1193px;" border="0" class="l">
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><h1>Result Type: ANC</h1></td>
+</tr>
+</table>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX2"></a>
+<div>
+<div  class="l">
+<img alt="ANC" src="ANC1.png" style=" height: 1066px; width: 1193px;" border="0" class="l">
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><h1>Result Type: INR</h1></td>
+</tr>
+</table>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX3"></a>
+<div>
+<div  class="l">
+<img alt="INR" src="INR1.png" style=" height: 1066px; width: 1193px;" border="0" class="l">
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><h1>Result Type: K</h1></td>
+</tr>
+</table>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX4"></a>
+<div>
+<div  class="l">
+<img alt="K" src="K1.png" style=" height: 1066px; width: 1193px;" border="0" class="l">
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><h1>Result Type: SODIUM</h1></td>
+</tr>
+</table>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX5"></a>
+<div>
+<div  class="l">
+<img alt="SODIUM" src="SODIUM1.png" style=" height: 1066px; width: 1193px;" border="0" class="l">
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><h1>Result Type: TOT_CHOLES</h1></td>
+</tr>
+</table>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX6"></a>
+<div>
+<div  class="l">
+<img alt="TOT_CHOLES" src="TOT_CHOLES1.png" style=" height: 1066px; width: 1193px;" border="0" class="l">
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><h1>Result Type: TOT_PROT</h1></td>
+</tr>
+</table>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX7"></a>
+<div>
+<div  class="l">
+<img alt="TOT_PROT" src="TOT_PROT1.png" style=" height: 1066px; width: 1193px;" border="0" class="l">
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><h1>Result Type: TRIGL_NS</h1></td>
+</tr>
+</table>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX8"></a>
+<div>
+<div  class="l">
+<img alt="TRIGL_NS" src="TRIGL_NS1.png" style=" height: 1066px; width: 1193px;" border="0" class="l">
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><h1>Result Type: TSH</h1></td>
+</tr>
+</table>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX9"></a>
+<div>
+<div  class="l">
+<img alt="TSH" src="TSH1.png" style=" height: 1066px; width: 1193px;" border="0" class="l">
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><h1>Result Type: WBC</h1></td>
+</tr>
+</table>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX10"></a>
+<div>
+<div  class="l">
+<img alt="WBC" src="WBC1.png" style=" height: 1066px; width: 1193px;" border="0" class="l">
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>

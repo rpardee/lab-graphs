@@ -1,0 +1,90 @@
+From Jeff:  12 minute presentations and 5 minutes of Q&A following each
+========================
+Lab Is Hard
+  Lab requires more substantive clinical expertise to do well than probably any other VDW data area.
+    - nascent exception is probably infusion.
+  Primary reason for this is--no generally applicable standard coding system.
+    LOINC didn't start until 1994.
+    GH results data begins in 1988.
+    By then GH had a good-enough internal coding system.
+      So LOINC hasn't had a lot of traction at GH.
+    "good-enough" here means adequate for lab techs to interpret what doc wanted done, & docs to interpret what lab techs actually did & what the outcome was.
+      That's not always wonderful for a lowly programmer coming years later.
+
+      "This is the part where I didn't go to medical school."
+
+So we at least started out siloed.
+
+That isolation allowed us to make up our own test codes & result descriptors.
+  - and change them w/out regard to what was happening in the outside world.
+
+  It's particularly difficult because indigenous data changes over time.
+    - Tests fall out of favor & are replaced by newer versions with different normal ranges, say.
+      - or aren't replaced!
+    - Sometimes test identifiers change.
+      - local codes are retired/recycled.
+      - systems changes can bring whole new suites of codes.
+
+  - If your data are like GH's, the actual descriptive data applied to them can be exceedingly cryptic.
+    - just fine if you're the doc who ordered the test--you know what 'INR' must mean for Patty Patient's report from last week.
+    - but for us poor programmers coming years later, we need some help
+
+
+Okay--whine over.
+
+
+To really be comfortable w/your lab data implementation you should have a sense for:
+  - how many results of a particular type you should have (and how that amount rises/falls over time)
+  - what the result values should look like.  In particular:
+    - should they be character or numeric?
+    - if character, what should the modal values look like?
+    - if numeric
+      - what units?
+      - what should the distribution of those values look like?
+
+Data users also often need to know these things to be assured that they mean the same thing as us by "fasting glucose", say.
+
+The main boogeyman for me was "What if I'm being too inclusive in the local codes I'm taking to signify a particular VDW result type?"
+
+So I wrote programs that produced series' of graphs--N results over time, proportion char or numeric, distributions, bar charts.
+
+These were all useful, but it was a serious drag having to jump back and forth between different types of graphs.  For example, I could look at boxplots by unit of numeric values to get a sense of the distributions, but that graph doesn't show how many of each type you actually have.
+
+I muddled through like that for a while, and then discovered the new GUI designer for sas/graph: %sgdesign.
+
+That turned out to be a gateway drug for SG template language.
+
+Now I can produce a one-page 'visual report card' compound graph for each test_type, which puts all these bits of information in a single place.
+
+Let's take a look
+
+  - example of overinclusion: CRPHS
+  - example of boxplot uninformative WRT N:
+
+
+
+
+=============================================
+Visualizing VDW Lab Results Data: Why You Should, And How You Can--Easily!
+
+Background/Aims
+
+One of the most difficult tasks facing the VDW lab results file implementer is figuring out which records from local lab data should be included in their VDW file, and which should be left out.  These decisions frequently hinge on neat points of clinical science that are often outside the expertise of the programmer.  The proposed paper will describe a set of graphics that implementers can use to shed light on these decisions, useful both during implementation, and afterwards as indication of data quality and even as documentation.
+
+Methods
+
+SAS' new Statistical Graphics procedures allow unprecedented control and ease of use in the creation of descriptive graphs and charts.  The ODS Graphics Designer utility, paired with the SGDESIGN procedure make it easy to create a single image composed of multiple different graphs, each of which can use its own dataset.  These tools allowed us to create something of a "data report card" for each VDW test_type, depicting:
+• The number of result records over time.
+• The number of result values that are numeric vs. character, stratified by the local lab codes used.
+• The distributions of numeric result values, by unit.
+• The number of numeric result values, by unit and local lab code.
+• The values of character results by local lab code.
+The report card is produced by a standard VDW program available from the author, which can be run at any VDW lab results-implementing site with access to SAS version 9.2 or greater.
+
+Results
+
+The graphics produced by this program allow both implementers and end-users to evaluate at a glance, how cohesive the data from various different local codes are, how much data there is at all, how it waxes and wanes over time, whether the values are of the expected types, and whether units and character values are within valid values.  Being able to depict all of this disparate information in a single, compact display allows users to glean insights that e.g., viewing series of larger graphs separately would not afford.
+
+Conclusions
+
+The author has used the resulting report cards to evaluate a new implementation of lab results to excellent effect.  Specifically, we identified several local codes that were misunderstood and then eliminated from the program that constructs the file, thereby sparing end-users the difficulty of discovering and screening them out themselves.  Because the program that produces these is a standard VDW program, any VDW-implementing site should be able to use it to inspect and document their lab data holdings.
