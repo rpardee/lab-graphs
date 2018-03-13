@@ -1,2 +1,3 @@
 ~*
-vdw_lab_graphs.log
+*.log
+*.lst
